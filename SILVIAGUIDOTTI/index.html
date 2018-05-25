@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>MI PRESENTO</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="301.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Silvia Lavinia Guidotti Mancini</h1>
+                  <h3 >studentessa</h3>
+                  <h4>ho 15 anni e vengo da Roma, frequento il primo anno di istituto tecnico agrario</h4>
+                  <div>
+<h3>ho partecipato a #codelikeagirl</h3>
+                  </div>
+
+
+
+
+                  <br><br><br>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:silvialaviniaguidottim@gmail.com" >silvialaviniaguidottim@gmail.com</a></li>
+                      <li><a href="#" target="_blank"  >github.com/SilviaLav</a></li>
+                      <li><a href="https://instagram.com/instagramname" target="_blank"  >@silvialaviniaa</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">educazione</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Diploma di scuola media</li>
+                      <li class="doveed">Istituto Massimiliano Massimo</li>
+                      <li class="descrizioneed">ho conseguito il diploma di scuola media nell'anno scolastico 2016/2017 all'istituto Massimiliano Massimo</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                      <li class="nomeed">corso di studi attuale</li>
+                      <li class="doveed">Istituto tecnico agrario Giuseppe Garibaldi</li>
+                      <li class="descrizioneed">attualmente frequento il primo anno di istituto tecnico agrario, conseguendo ottimi voti in tutte le materie.</li>
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">lingue parlate e scritte</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(FCE)</span></li>
+                      <li>Spagnolo <span class="lang-desc">(A1)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">qualcosa su di me</h2>
+                  <div class="summary">
+                      <p>Nel tempo libero amo guardare film, leggere, ascoltare la musica (pop, elettro pop,classica), imparare cose nuove e stare con i miei amici. Sono appassionata di astronomia e amo praticare swimtrekking.</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Progetti</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>nella vita vorrei diventare un avvocato, o dedicarmi alla scienza.
+                      Conto anche di conseguire altre certificazioni Cambridge per la lingua inglese, un'altra lingua che vorrei imparare e' il tedesco.</p>
+
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="305.png" class="img-thumbnail img-responsive" max-width="200">
+                        <p>sono appassionata di astronomia, mi affascina il funzionamento dell'universo,anche se mi fa sentire minuscola</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="307.png" class="img-thumbnail img-responsive" max-width="200">
+                        <p>un'altra mia passione e' lo swimtrekking, amo osservare la vita marina e l'ambiente in cui vive, mi rilassa moltissimo</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="leonardo.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Leonardo Da vinci</h1>
+                  <h3 > Ingenere,pittore,scienziato</h3>
+                  <h4>Uomo d ingegno dal talento universale del rinascimento italiano.E' considerato uno dei piu' grandi geni dell' umanita'</h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" >per saperne di piu' &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:chiara.angelici1402@gmail.com">gmail</a></li>
+                      <li><a href="http://www.museodavinci.it">museo</a></li>
+                      <li><a href="https://www.facebook.com/leonardo.page/" target="_blank"  >facebook</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="education">
+                  <h2 class="section-title">INIZI E FASE DI FORMAZIONE</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+
+                      <p>Figlio primogenito di una famiglia modesta. Il padre aveva già lavorato a Firenze e nel 1462, a dire di Giorgio Vasari vi ritornò con la famiglia, compreso il piccolo Leonardo. Il padre Piero avrebbe mostrato all'amico Andrea del Verrocchio alcuni disegni di tale fattura che avrebbero convinto il maestro a prendere Leonardo nella sua bottega; è in realtà alquanto improbabile che un apprendistato cominciasse ad appena dieci anni, per cui l'ingresso di Leonardo nella bottega del Verrocchio viene oggi ritenuto posteriore. Diventando ormai sempre più evidente l'interesse del giovane Leonardo nel "disegnare et il fare di rilievo, come cose che gl'andavano a fantasia più d'alcun'altra", ser Piero mandò infine il figlio, dal 1469 o 1470, nella bottega di Andrea del Verrocchio, che in quegli anni era una delle più importanti di Firenze, nonché una vera e propria fucina di nuovi talenti</p>
+
+                      
+                                        </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                    <p>Tra gli allievi figuravano nomi che sarebbero diventati i grandi maestri della successiva generazione, come Sandro Botticelli, Perugino, Domenico Ghirlandaio e Lorenzo di Credi, e la bottega espletava un'attività poliedrica, dalla pittura alle varie tecniche scultoree (su pietra, fusione a cera persa e intaglio ligneo), fino alle arti "minori". Soprattutto veniva stimolata la pratica del disegno, portando tutti i collaboratori a un linguaggio pressoché comune, tanto che ancora oggi può risultare molto difficile l'attribuzione delle opere uscite dalla bottega alla mano del maestro oppure a un determinato allievo. Si conoscono vari esempi di disegni di panneggi usciti dalla sua bottega, che derivano da esercizi che il maestro faceva fare copiando le pieghe dei tessuti sistemati su modelli di terra Inoltre gli allievi apprendevano nozioni di carpenteria, meccanica, ingegneria e architettura</p>
+
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">CITTA' IN CUI LAVORA</h2>
+                  <ul class="lingueli">
+                      <li>roma <span class="lang-desc"></span></li>
+                      <li>mantova<span class="lang-desc"></span></li>
+                      <li>venezia <span class="lang-desc"></span></li>
+                      <li>parigi<spam class="lang-desc"></spam></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">BIOGRAFIA</h2>
+                  <div class="summary">
+                      <p> 1452 Leonardo nasce a Vinci il 15 aprile, figlio di ser Piero, un notaio e di Caterina, una contadina.
+1469 A soli quattordici anni dipinge talmente bene che inizia a lavorare nella bottega del Verrocchio. Qui impara a dipingere e a scolpire.
+1473 Data il suo primo disegno, il Paesaggio della valle dell’Arno.
+1478 Esegue una pala d’altare in Palazzo della Signoria, a Firenze.
+1482 Si trasferisce a Milano dove svolge molti incarichi tra cui l’edificazione di una statua equestre in onore di Francesco Sforza.
+1495 Inizia a realizzare il Cenacolo a S. Maria delle Grazie di Milano e svolge alcune decorazioni nel castello sforzesco.
+1499 Lascia Milano e sosta per un periodo a Mantova dove dipinge due ritratti di Isabella d’Este.
+1500 Passa a Venezia in marzo e poi torna a Firenze.
+1502 Dipinge il ritratto di Monna Lisa su incarico del marito, un ricco fiorentino. Si mette al servizio di Cesare Borgia come ingegnere e architetto e lo segue nelle sue campagne militari in Romagna. Studia fortificazioni e macchine da guerra.
+1503 La repubblica incarica Leonardo di dipingere La battaglia di Anghiari in Palazzo Vecchio.
+1504 Leonardo influisce notevolmente nelle opere di Raffaello.
+1508 Torna a Milano e studia anatomia e geologia.
+1513 Parte per Roma dove rimarrà tre anni a studiare matematica e scienze.
+1514 Esegue i progetti per il prosciugamento delle paludi pontine.
+1515 Lascia l’Italia e si reca alla corte di Francesco l di Francia e gli viene dato in uso il castello di Cloux, ad Amboise.
+1519 Muore il 2 maggio nel castello di Cloux..</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">ALTRE INFO</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p><a href="https://doc.studenti.it/podcast/leonardo-da-vinci.html">podcast</a></p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                 <p><a href="https://www.skuola.net/news/social-trend/leonardo-da-vinci-invenzioni-usate.html">invenzioni</a></p>
+                  </div>
+
+
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">OPERE IMPORTANTI</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="gioconda.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <a href="https://www.studenti.it/la-gioconda-leonardo-da-vinci.html">La Gioconda</a>
+                          </div>
+
+
+
+                    <div class="col-sm-6 pass2">
+                      <img src="ultima cena.jpg" class="img-thumbnail img-responsive" max-width="200">
+                    <a href="http://www.studentville.it/appunti/approfondimento-lultima-cena-di-leonardo-da-vinci/">L'ultima cena</a>
+                    </div>
+
+                  </div>
+              </section>
+
+
+
+</body>
+</html>

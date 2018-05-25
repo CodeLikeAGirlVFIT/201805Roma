@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>The world of Federica!</title>
+    <link rel="icon" href="iconaaa.jpg">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="kanna.png">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Federica Adriani</h1>
+                  <h3 >Ohayō minna-san!</h3>
+                  <h4>Welcome to my little world!</h4>
+                  <h4>Sono una ragazza che ama l'arte, la musica, la fotografia e il pattinaggio sul ghiaccio.</h4>
+                  <h4>Mi piace disegnare, dormire, sognare ad occhi aperti, vedere anime/serie tv,</h4>
+                  <h4>leggere libri/manga e collezionare cd.</h4>
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" >Bottone! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="https://open.spotify.com/user/fede27_03/playlist/2sTYn8d2X0eWVO9LEVAAvw?si=y7zNJEdETiOFRblMDBtLhQ" >La mia playlist di Spotify</a></li>
+                      <li><a href="https://www.instagram.com/fede_coldplay/"target="_blank"  >My Instagram</a></li>
+                      <li><a href="https://www.wattpad.com/574090237-questa-eterna-libert%C3%A0-nuvole-di-latte" target="_blank"  >Leggi la mia storia su Wattpad!</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Facts about me</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Sono nata il 5 novembre 2002</li>
+                      <li class="doveed">Frequento il liceo classico (ho un rapporto abbastanza particolare con la mia scuola, di amore/odio)</li>
+                      <li class="descrizioneed">Il mio motto è "Forget but not forgive" (è di una canzone dei Coldplay, lol)</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                      <li class="nomeed">Ho paura dei cani</li>
+                      <li class="doveed">Sono una caffeinomane</li>
+                      <li class="descrizioneed">100% A-N-S-I-A</li>
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Top 3 cose random</h2>
+                  <ul class="lingueli">
+                      <li>Viva la vida <span class="lang-desc">(fav song)</span></li>
+                      <li>Yuri on ice <span class="lang-desc">(fav anime)</span></li>
+                      <li>The Big Bang Theory <span class="lang-desc">(fav serie tv)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">Chi sono?</h2>
+                  <div class="summary">
+                      <p>Okay, non sono brava a parlare di me e dei miei interessi, but I can try.</p>
+                      Dunque, mi chiamo Federica, ho 15 anni e la mia specialità è procrastinare e perdere tempo in tutto cio' che faccio.
+                      Adoro letteralmente studiare la storia dell'arte, la filosofia occidentale e la poesia.
+                      Ho un'ossessione estremamente esagerata per i Coldplay, gli anime, i manga e le serie tv.
+                      Da grande vorrei diventare una biomedica e,eventualmente, lavorare in Giappone.
+                      Nel tempo libero (cioè mai) mi diverto a ri-disegnare i personaggi dei miei anime preferiti per poi caricarli
+                      sul mio secondo profilo Instagram, che condivido con una mia amica (<a href="https://www.instagram.com/studioart_fm/">Studioart_fm</a>)</p>
+                      <p>Non so piu' cosa scrivere, so... Buona permanenza sul mio sito!</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title"><strong><em>Artisti musicali preferiti</em></strong></h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p><em>Coldplay</em>:<img src="Coldplay.jpg" class="img-thumbnail img-responsive" max-width="200"></p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p><em>Oasis</em>:<img src="oasis.jpg" class="img-thumbnail img-responsive" max-width="200"></p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p><em>Queen</em>:<img src="queen.png" class="img-thumbnail img-responsive" max-width="200"></p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title"><strong><em>Art and Ice Skating</em></strong></h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="notte.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>La mia corrente artistica preferita e' il post-impressionismo, di cui Vincent Van Gogh
+                          e' stato il massimo esponente. </p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="kat.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Kaitlyn Weaver e Andrew Poje sono i miei pattinatori preferiti. Entrambi, sono nati in Canada e, fin da piccoli,
+                           hanno dimostrato un grande talento per il pattinaggio sul ghiaccio.
+                           Con il loro programma free-dance "Je suis malade", hanno fatto emozionare tantissime persone.</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

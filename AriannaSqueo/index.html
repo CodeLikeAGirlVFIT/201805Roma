@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="fotoprofilo.png">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Arianna Squeo</h1>
+                  <h3 >student</h3>
+                  <h4>Mi chiamo Arianna, ho 14 anni e amo le lingue.</h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" >Click Here! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="https://www.instagram.com/ariannasqueo/" >Instagram</a></li>
+                      <li><a href="mailto:ariannasqueo@gmail.com" target="_blank">e-mail</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">School</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Studentessa</li>
+                      <li class="doveed">Liceo Linguistico Statale Federigo Enriques</li>
+                  </ul>
+
+                  <h2 class="section-title">Travel</h2>
+                  <!-- Elemento 2-->
+
+                  <ul  class="travel">
+                       <p>Citta da visitare:</p>
+                      <li class="descrizioneed">London,United Kingdom</li>
+                      <li class="descrizioneed">New York,USA</li>
+                      <li class="descrizioneed">Amsterdam,Holland</li>
+                      <li class="descrizioneed">Seoul,South Korea</li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(Professional)</span></li>
+                      <li>Spagnolo <span class="lang-desc">(Professional)</span></li>
+                      <li>Francese <span class="lang-desc">(Beginner)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Sono Arianna. Vado al Liceo Linguistico F.Enriques e studio lingue per avere la possibilita di viaggiare il piu possibile e per andare a vivere/lavorare all'estero. Sono appassionata di cinematografia e mi piacciono molto i film d'azione, fantascientifici o anche dei semplici film d'amore; guardo anche molte serie tv,tra le poiu disparate. Pratico pallavolo da sei anni e proprio quest'anno ho cambiato societa sportiva e adesso sono nell'Under16 con la Caio Duilio:faccio il Martello. I miei hobby sono ascoltare la musica,parte fondamentale della mia giornata,e amo soprattutto uscire con i miei amici, sia con i miei compagni di classe che con le ragazze della mia squadra di o anche con vecchi amici che non vedo da molto. </p>
+                  </div>
+              </section>
+
+
+              <section class="passioni">
+                  <h2 class="section-title">My Music</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="ted.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p><a href="https://www.youtube.com/watch?v=qUGrXMEytWY" ><strong>Tedua</strong></a></p>
+                    </div>
+                     <div class="col-sm-6 pass2">
+                      <img src="cp.jpg" class="img-thumbnail img-responsive" max-width="200">
+                      <p><a href="https://www.youtube.com/watch?v=tpt56VsvbJg"><strong>Capo Plaza</strong></a></p>
+                    </div>
+                    <div class="col-sm-6 pass1">
+                        <img src="bimbi.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p><a href="https://www.youtube.com/watch?v=l9WWa98S4OM"><strong>Charlie Charles</strong></a></p>
+                   </div>
+                   <div class="col-sm-6 pass1">
+                       <img src="sto.png" class="img-thumbnail img-responsive" max-width="200">
+                       <p><a href="https://www.youtube.com/watch?v=fgt6luBwzz0"><strong>Ghali</strong></a></p>
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

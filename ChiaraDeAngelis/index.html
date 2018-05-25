@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>Me,myself and I</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+  <link rel="icon" href="rosa.jpg">
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="fotochiara.jpg">
+                            </div>
+                <div class="col-sm-6">
+                  <h1 >Chiara De Angelis</h1>
+                  <h3 >studentessa</h3>
+                  <h4>Ho 15 anni, frequento il primo anno di liceo classico e pratico ginnastica artistica.</h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" >click here! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:comante69@gmail.com" >mail</a></li>
+
+                    <li><a href="https://instagram.com/chiara_1_03" target="_blank"  >@instagramname</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title"> School&freetime </h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Education:Liceo Classico-sezione Cambridge</li>
+                      <li class="doveed">Studio Mathematics e Chemistry in lingua inglese</li>
+                      <li class="descrizioneed"> Faccio alcune materie caratteristiche del classico, come il greco. </li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                      <li class="nomeed">Sports&Hobbies:ginnastica artistica e violino</li>
+                      <li class="doveed">Pratico ginnastica artistica a livello agonistico da circa 6 anni. E'uno sport che amo, perche' lo considero un momento di svago e divertimento.</li>
+                      <li class="descrizioneed">Suono anche il violino da quando avevo 9 anni. Alle medie ho fatto la scuola musicale ed ho suonato nell'orchestra dell'istituto.</li>
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">La ginnastica artistica</h2>
+                  <ul class="lingueli">
+                      <li>Ci sono 4 attrezzi: <span class="lang-desc">trave, parallele, corpo libero, volteggio.</span></li>
+                      <li>E' uno sport individuale, ma ci sono anche alcune gare a squadre es.<span class="lang-desc">Olimpiadi, Mondiali.</span></li>
+                      <li>Richiede: <span class="lang-desc">forza fisica, resistenza, scioltezza dei legamenti.</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <h6>Sono una ragazza un po' timida, quindi a volte ho difficolta' a relazionarmi con le persone, specialmente con quelle che non conosco. Con quelle con cui faccio amicizia pero' sono diversa, e molti di loro mi reputano gentile e simpatica.</h6>
+                           </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">My future</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p><img src="universita.jpg"alt"=universita"></p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <h6> Dopo aver finito il liceo vorrei frequentare l'universita', anche se non ho ancora chiaro quale facolta' scegliere. Una che mi interessa e' aeronautica, anche se penso che avro' un po' di difficolta' a farla, soprattutto perche' ora sto facendo il liceo classico, mentre per questa facolta' sono indicati studi diversi dal mio..</h6>                                  </div>
+                  <div class="col-sm-4 prog3">
+                      <h6><a href="https://neuvoo.it/neuvooPedia/it/pilota"> il lavoro di un pilota </a> <img src="aereo_3.jpg" alt="aereo_3"> Il lavoro che mi piacerebbe fare da grande e' il pilota di aerei, la professione che ha fatto anche mio nonno e che, anche dai suoi racconti, sembra davvero bella ed interessante.</h6>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="libro.jpg" alt="libro"class="img-thumbnail img-responsive" max-width="200">
+                        <h6>Una delle cose che piu' mi piace fare durante il tempo libero e' leggere, in particolare libri gialli. Purtroppo ora ho molti compiti, quindi ho meno tempo per dedicarmi a questa passione, ma spero di poterlo  fare di piu' con l'arrivo dell'estate.</h6>                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="natura.jpg" alt="natura" class="img-thumbnail img-responsive" max-width="200">
+                        <h6>Durante il tempo libero una cosa che mi rilassa molto e' passeggiare nella natura, soprattutto dopo una giornata o un periodo stressante. Inoltre penso che questa attivita' sia molto interessante e diversa dal solito.</h6>                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>Il mio primo sito web</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="IO.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1>Sara Messina</h1>
+                  <h2 >studentessa</h2>
+                  <h3>Ho 14 anni, vivo a Roma, vado a scuola a "Orsa maggiore"e amo la musica!</h3>
+
+
+                  <br><br><br>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed"></li>
+                      <li class="doveed"></li>
+                      <li class="descrizioneed"><h5>Ho eseguito le elementari al S.Chiara,una scuola privata al torrino
+                        e ora sono all'ultimo anno di medie presso <em> <strong>Orsa maggiore. </strong></em></li></h5>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                      <li class="nomeed"></li>
+                      <li class="doveed"></li>
+                      <li class="descrizioneed"></li>
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h1 class="section-title">Arti marziali<h5>una parte di me</h5></h1><div></div>
+                  <h5>Ho cominciato a praticare karate a nove anni,l'ho fatto per due anni
+                  arrivando alla <em><strong>cintura gialla </strong></em>dopo aver capito che il karate non mi soddisfava
+                all'eta' di 12 anni ho cominciato a fare jet kun do,abbreviato <strong>JKD </strong>un'arte marziale fondata
+              sul combattimento essenziale,anche quello non mi entusiasmava,cosi circa un anno fa ho scoperto
+            il <em><strong>Krav maga </em></strong>un sistema di combattimento ravvicinato e autodifesa di origine israeliana
+          che viene applicato presso l'esercito stesso dell'israele(solo nelle forze speciali).</h5>
+
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h1 class="section-title">About me</h1>
+                  <div class="summary">
+                      <h5>Mi chiamo Sara,vivo a Roma,esattamente all'Eur e ho 14 anni.
+                         Adoro la musica,amo sia ascoltarla che suonarla infatti da tre anni circa
+                         suono la chitarra e il pianoforte,putroppo non so cantare.
+                         Pratico Krav maga,e' un'arte marziale dell'esercito israeliano!</h5>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h1 class="section-title">Progetti</h1>
+                <div class="row">
+
+
+                      <h5>I miei progetti futuri?
+                      Ho vari piani.
+                      Il primo e' intraprendere l'accademia militare aereonautica,se l'esercito non fa per me allora mi piacerebbe fare il conservatorio e in fine,ultima opzione sarebbe finire il liceo e continuare gli studi all'accademia delle belle arti.</h5>
+
+                  <div class="col-sm-4 prog2">
+                      <p></p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p></p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="chitarra.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <h4>Una delle mie piu' grandi passioni.</h4>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="piano.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <h4>La mia musica</h4>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
