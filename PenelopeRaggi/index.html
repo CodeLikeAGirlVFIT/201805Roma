@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="foto.JPG">
+                <div class="col-sm-9">
+                  <h1 >Penelope Raggi</h1>
+                  <h3 >studentessa</h3>
+                  <h4>Hi my name is Penelope,welcome into my website</h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" >Bottone! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:penelope.raggi@gmail.com" >mail</a></li>
+                      <li><a href="https://instagram.com/penelope.raggi" target="_blank"  >instagram</a></li>
+                      <li><a href="https://twitter.com/peneloperaggi" target="_blank"  >@twittername</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Scuola Media</li>
+                      <li class="doveed">G.Moscati</li>
+                      <li class="descrizioneed">Grazie a Vodafone,ho frequentato un corso di coding,che mi ha permesso di imparare a programmare pagine web come questa!</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                      <li class="nomeed">Studi Futuri</li>
+                      <li class="doveed">Il prossimo anno frequentero' il primo anno di liceo classico al Dante Alighieri.</li>
+                      <li class="descrizioneed">mentre da grande,per quanto io ami Roma,mi piacerebbe intraprendere un percorso di studi all'estero in America,in una facolta' di giurisprudenza.</li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(intermediate)</span></li>
+                      <li>Spagnolo <span class="lang-desc">(Beginner)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                   <div class="summary">
+                    <p> mi chiamo Penelope Raggi ho 14 anni e frequento la terza media alla scuola Giuseppe Moscati,mi piace viaggiare,studio inglese dall'eta' di quattro anni,ho un cane di nome caos.Nel mio tempo libero adoro uscire con gli amici,andare al cinema,e fare shopping. </p>
+                  </div>
+              </section>.
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">TRAVEL</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>Fin da piccola ho sempre viaggiato tanto,ho visitato quasi tutta l'Italia,l'Irlanda,l'Inghilterra, quasi tutta la Francia,e la Grecia.</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Quest'estate,ad agosto andro' in America a New York per una settimana e sono molto entusiasta perche' fin da piccola mi ha sempre affascinato la cultura americana ed e' sempre stato un mio sogno andarci</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>Altri posti che mi piacerebbe visitare sono
+                          <ul>
+                               <li>Los Angeles</li>
+                               <li>Barcellona</li>
+                               <li>Berlino</li>
+                               <li>Madagascar</li>
+                               <li> Rio De Janeiro</li>
+                               <li>Kenya</li>
+                               <li>Praga</li>
+                        </ul>
+                      </p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <p>una delle mie piu' grandi passioni e' la <h6><strong>scrittura</h6></strong>Mi piace scrivere di quello che ho intorno,di quello che succede nel mondo,o semplicemente di come mi sento.Ho partecipato a due concorsi e mi sono divertita tantissimo a partecipare e alla fine,inaspettatamente ho anche vinto.</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                        <p>Un'altra mia grande passione e' la <h6><strong>musica</h6></strong> Non suono nessuno strumento perche' sono incapace,pero mi piace tantissimo ascoltarla.Ascolto musica di tutti i generi e in tutti i momenti. Ed e' una cosa senza la quale io non vivrei, perche' mi migliora le giornate e mi fa tornare il sorriso.</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

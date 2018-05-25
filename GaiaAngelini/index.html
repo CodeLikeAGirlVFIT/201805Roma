@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>COSTA CROCIERE</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icona.png">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="costa.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Costa crociere</h1>
+                  <h3 >Compagnia di navigazione</h3>
+                  <h4>Benvenuti alla felicita'</h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" >Bottone! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="https://www.facebook.com/CostaCrociere/?brand_redir=89062077445" >Facebook</a></li>
+                      <li><a href="https://www.instagram.com/costacruisesofficial/?hl=it" target="_blank"  >Instagram</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Navi</h2>
+                  <ul>
+                    <li>Costa Favolosa</li>
+                    <li>Costa Mediterranea</li>
+                    <li>Costa Pacifica</li>
+                  </ul>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Cosa offrono le navi</li>
+                      <li class="descrizioneed">
+                      <ul>
+                       <li>Aperol spritz bar</li>
+                       <li>Ristorante self-service</li>
+                       <li>Ristorante Samsara</li>
+                       <li>Shopping</li>
+                       <li>Cinema 4D</li>
+                       <li>Simulatore di Gran Premio</li>
+                       <li>Piscine </li>
+                       <li>Scivolo d'acqua</li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano </li>
+                      <li>English </li>
+                      <li>Espanol</li>
+                      <li>Deutsch</li>
+
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">Offerte Speciali</h2>
+                  <div class="summary">
+
+                      <ul>
+                          <li>Estate All-Inclusive.Parti senza pensieri con quote di servizio e pacchetti bevande, inclusi nel prezzo. </li>
+                          <li>Last Minute.Valigie pronte ma non sai dove andare? Parti subito verso mete da sogno.</li>
+                          <li>Luglio e Agosto: vacanze in vista! Quest'estate a prezzi incredibili!</li>
+                      </ul>
+                                        <section class="progetti">
+                                          <h2 class="section-title">Destinazioni Top</h2>
+                                          <div class="row">
+
+                                            <div class="col-sm-4 prog1">
+                                              <br></br>
+                                                <h3>Caraibi</h3>
+                                            </div>
+                                            <div class="col-sm-4 prog2">
+                                              <br></br>
+                                                <h3>Fiordi</h3>
+                                            </div>
+
+
+                                          </div>
+
+                                        </section>
+
+                                        <section class="passioni">
+
+                                            <div class="row">
+                                              <div class="col-sm-6 pass1">
+                                                  <img src="Caraibi.jpg" class="img-thumbnail img-responsive" max-width="200">
+                                                  <p>I Caraibi sono una regione delle Americhe che comprende tutti i paesi bagnati dal Mare Caraibico,
+                                                     cioè tutte le isole delle Antille e i litorali di alcuni paesi continentali del centro e sud America
+                                                     che si affacciano su di questo mare. L'area caraibica è costituita dalla miriade di isole
+                                                     che separano il Golfo del Messico dal mar dei Caraibi e quest'ultimo dall'Oceano Atlantico.</p>
+                                              </div>
+                                              <div class="col-sm-6 pass2">
+                                                <img src="Fiordi.jpg" class="img-thumbnail img-responsive" max-width="200">
+                                                  <p>Un fiordo è un braccio di mare che si insinua nella costa,
+                                                    anche per vari chilometri, inondando un'antica valle glaciale o fluviale.</p>
+                                              </div>
+
+                                            </div>
+                                        </section>
+
+
+                                    </div>
+                                </div>
+                              </div>
+                          </body>
+                          </html>

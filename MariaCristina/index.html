@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="fotoinstagram.PNG">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Maria Cristina Liberatori</h1>
+                  <h3 >studentessa</h3>
+                  <h4>Ciao, sono Maria Cristina e ho 14 anni</h4>
+
+
+                  <br><br><br>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="cristinalib03@gmail.com" >mail</a></li>
+                      <li><a href="#Cristinalib" target="_blank"  >github.com/username</a></li>
+                      <li><a href="https://instagram.com/cristinaalib_" target="_blank" >Instagram</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Frequento</li>
+                      <li class="doveed"></li>
+                      <li class="descrizioneed">Il primo anno del Liceo Linguistico Vincenzo Arangio Ruiz. Inoltre, ho frequentato un corso di Coding che mi ha permesso di creare questa pagina.</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                      <li class="nomeed">Sport</li>
+                      <li class="doveed"></li>
+                      <li class="descrizioneed">Da piccola ho praticato vari sport, tra cui: pattinaggio, nuoto, hip-hop e ginnastica artistica. Pratico ginnastica ritmica da due anni ma, dato che ho una passione per la danza, ho gia' deciso che l'anno prossimo mi segnero' a danza moderna.</li>
+
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italiano <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese <span class="lang-desc">(Intermediate)</span></li>
+                      <li>Francese <span class="lang-desc">(Intermediate)</span></li>
+                      <li>Tedesco <span class="lang-desc">(Beginner)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Sono una studentessa, nel tempo liero esco con i miei amici, vado al cinema o faccio attivita' fisica autonomamente. La mia cantante preferita per ora e' Ariana Grande, vorrei andare ad un suo concerto ma ancora non ne ho avuto l'occasione. Il mio cibo preferito e' il gelato, ma adoro anche la pizza. Adoro la Nail art e quando ho tempo mi diverto a mettermi lo smalto e a decorare le mie unghie. Mi piace molto anche il makeup, infatti mi trucco spesso e soprattutto adoro farlo!!!</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Progetti</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>Mi piace molto viaggiare, infatti quest'estate vorrei andare all'estero, non so ancora bene dove, ma mi piacerebbe andare a Parigi o a Londra.</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Data la mia passione per la Nail art da grande vorrei fare l'estetista a livello professionale.</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p></p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="make up.png" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Una delle mie passioni e' l'arte del make up perche' mi rilassa.</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="cinema.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Un'altra mia passione e' andare al cinema, i film mi trasmettono emozioni e mi diverto a vederli soprattutto in compagnia di amici.</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

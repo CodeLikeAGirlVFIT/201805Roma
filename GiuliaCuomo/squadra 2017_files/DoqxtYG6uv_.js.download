@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["8oJYG"]); }
+
+__d("MessengerCallLogEvent",[],(function(a,b,c,d,e,f){e.exports=Object.freeze({GROUP_CALL_ENDED:"group_call_ended",GROUP_CALL_STARTED:"group_call_started",INVITED_TO_CALL:"invited_to_call",MISSED_CALL:"missed_call",ONE_ON_ONE_CALL_ENDED:"one_on_one_call_ended"})}),null);

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["KoX\/E"]); }
+
+__d("UFIODSLogger",["BanzaiODS"],(function(a,b,c,d,e,f){"use strict";var g="www.ufi";a={bump:function(a,c){b("BanzaiODS").bumpEntityKey(g,a+"."+c)}};e.exports=a}),null);

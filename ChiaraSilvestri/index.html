@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>ChiaraSilvestri</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-9">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="io.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Chiara Silvestri</h1>
+                  <h3 >studentessa</h3>
+                  <h4>Mi chiamo Chiara,ho 16 anni e vivo a Roma. In questo sito vi parlero' di me.</h4>
+
+
+                  <br><br><br>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                <p>Potete contattarmi cliccando qui: </p>
+                  <ul class="list contact-list">
+                      <li><a href="https://www.instagram.com/_chiarasilvestri_/?hl=it" >Instagram</a></li>
+                      <li><a href="https://www.facebook.com/chiara.silvestri.988" target="_blank"  >Facebook</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Studentessa scuole superiori</li>
+                      <li class="doveed">Itis Armellini,Roma</li>
+                      <li class="descrizioneed">Frequento un istituto tecnico e l'anno prossimo prendero' l'indirizzo informatico. Ho scelto questa scuola perche' mi piacerebbe capire come si svilupano i programmi che utilizziamo , infatti credo di scegliere l'universita' di ingenieria. Da grande mi piacerebbe collaborare nella creazioni di videogiochi, o magari frequentare dei corsi per programmare gli effetti speciali per lavorare nel mondo del cinema.</li>
+                  </ul>
+
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Music</h2>
+                  <p>Adoro ascoltare musica perche' le canzoni danno voce a quello che sento e che magari non riesco ad esprimere. I miei generi preferiti sono:</p>
+                  <ul class="lingueli">
+                      <li>Rap <span class="lang-desc"></li>
+                      <li>Indie <span class="lang-desc"></li>
+                      <li>Rock <span class="lang-desc"></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Ho molto tempo libero perche' non pratico sport, e mi piace guardare serie tv, molte serie tv, fare shopping, leggere, ascoltare musica, disegnare e scrivere.</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">La mia citta'</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>Amo Roma e la nostra tradizione, passeggiare per le vie del centro cantando gli stornelli, e mangiare una bella carbonara. "la Roma che distoglie dalle giornate storte", disse un cantante che adoro, e mi rivedo in questa frase: Roma e' una citta' magica, e seduta su un muretto, davanti al Colosseo riesco sempre a rilassarmi e dimenticare tutto cio' che mi circonda. </p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+
+                  <img class="img-thumbnail img-responsive" max-width="300" src="cl.png">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="san pietro.jpg">
+                  </div>
+
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <a href="https://www.wattpad.com/user/ChiaraSilvestri241">
+                        <img src="w.png" class="img-thumbnail img-responsive" max-width="200">
+                      </a>
+                        <p>Come ho gia' detto amo scrivere e questa e' una piattaforma dove chiunque puo' realizzare storie, cliccando sul logo potete visitare il mio profilo.</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="draw.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Questo e' uno dei disegni, tra quelli che ho realizzato, che preferisco. Un altro sogno nel cassetto e' fare la tatuatrice.</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

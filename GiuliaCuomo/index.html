@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title> La pallavolo</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+     <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="palla.jpg" type="icon">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="pallavolo2018.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Giulia Cuomo</h1>
+                  <h3 >studentessa</h3>
+                  <h4> Ho 15 anni, frequento il secondo anno di finanza e marketing e gioco a pallavolo </h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=P1E8ZSWELgM" >Cliccami! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="mailto:giulia.cuomo2002@gmail.com">mail</a></li>
+                      <li><a href="https://www.facebook.com/profile.php?id=100008602354598" target="_blank"  >facebookname</a></li>
+                      <li><a href="https://instagram.com/_giuliacuomo" target="_blank"  >@instagramname</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Pallavolo</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul  class="education">
+                      <li class="nomeed">La pallavolo e' prevalentemente uno sport di squadra si gioca in 6 piu il libero ciascuno di loro ha un ruolo,ci possono essere tre set o cinque set l'ultimo dei cinque finisce a 15.  </li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Ruoli</h2>
+                  <ul class="lingueli">
+                      <li> Pallegiatore <span class="lang-desc"></span></li>
+                      <li> Centrale<span class="lang-desc"></span></li>
+                      <li> Martello <span class="lang-desc"></span></li>
+                      <li> Opposto <span class="lang-desc"></span></li>
+                      <li> Libero <span class="lang-desc"></span></li>
+                  </ul>
+                  <h2 class="section-title">Posizioni pallavolo</h2>
+
+                <img class="img-thumbnail img-responsive" max-width="300" src="posizioni pallavolo.jpg">
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">La mia carriera da pallavolista</h2>
+                  <div class="summary" id="strong">
+                      <p>Io pratico pallavolo da quasi 6 anni in under 16 e 18, ho giocato per 5 anni con il Vigna Pia e quest'ultimo anno ho voluto cambiare squadra per problemi di vicinanza e sono andata al Marconi Stella dove mi sono trovata da subito molto bene. E' un ambiente molto tranquillo ho fatto subito amiciza e abbiamo finito anche il campionato in bellezza che siamo arrivate prime con l'under 18 e ora dovremmo andare alle nazioanli.</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Alcune regole della pallavolo</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1" id="cambiofontregole">
+                      <p>Il servizio è il fondamentale con il quale il giocatore in zona 1 invia la palla nel campo avversario. La palla deve superare la rete nella zona definita dalle due aste laterali senza toccare né il campo di gioco della squadra in battuta, né alcuno dei suoi giocatori. Se la palla tocca la rete ma, passando sopra di essa, giunge nel campo avversario, il servizio è valido. Il servizio non può essere murato. Il giocatore che effettua il servizio non deve calpestare la riga di fondo campo od oltrepassarla durante l'esecuzione della battuta.</p>
+                  </div>
+                  <div class="col-sm-4 prog2" id="cambiofontregole" >
+                      <p>Per ogni azione di gioco, la squadra ha a disposizione tre tocchi per inviare la palla nel campo avversario; nel caso di un quarto tocco il gioco viene fermato e il possesso di palla passa all'altra squadra (fallo di "quattro tocchi").</p>
+                  </div>
+                  <div class="col-sm-4 prog3" id="cambiofontregole">
+                      <p>La palla non può essere fermata o trattenuta. Può essere colpita con qualunque parte del corpo solamente nell'effettuazione del primo tocco ("tocco di squadra"); riguardo agli altri due tocchi, costituisce fallo il contatto della palla con il palmo della mano (se però quest'ultima si trova sotto l'asse delle spalle, in caso contrario è considerato regolare).</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="Passioni">
+                  <h2 class="section-title">SQUADRA</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="squadravignapia.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p id="blue"> VIGNA PIA
+                          Under 16 2016/2017 </p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="marconistella.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p id="yellow"> MARCONI STELLA
+                          Under 16/18 2017/2018
+                  </p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
